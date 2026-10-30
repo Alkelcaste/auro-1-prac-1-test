@@ -1,0 +1,22 @@
+[1.487s] Invoking command in '/workspaces/auro-1-prac-1-test/build/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/workspaces/auro-1-prac-1-test/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/auro-1-prac-1-test/install/my_package/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/auro-1-prac-1-test/build/my_package/build --no-deps symlink_data
+[1.933s] running develop
+[2.175s] running egg_info
+[2.195s] creating my_package.egg-info
+[2.195s] writing my_package.egg-info/PKG-INFO
+[2.196s] writing dependency_links to my_package.egg-info/dependency_links.txt
+[2.196s] writing entry points to my_package.egg-info/entry_points.txt
+[2.196s] writing requirements to my_package.egg-info/requires.txt
+[2.196s] writing top-level names to my_package.egg-info/top_level.txt
+[2.197s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[2.242s] reading manifest file 'my_package.egg-info/SOURCES.txt'
+[2.242s] writing manifest file 'my_package.egg-info/SOURCES.txt'
+[2.269s] running build_ext
+[2.269s] Creating /workspaces/auro-1-prac-1-test/install/my_package/lib/python3.14/site-packages/my-package.egg-link (link to .)
+[2.270s] Installing my_node script to /workspaces/auro-1-prac-1-test/install/my_package/lib/my_package
+[2.270s] 
+[2.270s] Installed /workspaces/auro-1-prac-1-test/build/my_package
+[2.271s] running symlink_data
+[2.271s] creating /workspaces/auro-1-prac-1-test/install/my_package/share/ament_index/resource_index/packages
+[2.271s] symbolically linking /workspaces/auro-1-prac-1-test/build/my_package/resource/my_package -> /workspaces/auro-1-prac-1-test/install/my_package/share/ament_index/resource_index/packages
+[2.271s] symbolically linking /workspaces/auro-1-prac-1-test/build/my_package/package.xml -> /workspaces/auro-1-prac-1-test/install/my_package/share/my_package
+[2.307s] Invoked command in '/workspaces/auro-1-prac-1-test/build/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/workspaces/auro-1-prac-1-test/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/auro-1-prac-1-test/install/my_package/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/auro-1-prac-1-test/build/my_package/build --no-deps symlink_data
