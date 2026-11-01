@@ -3,24 +3,23 @@ from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 
 from std_msgs.msg import String
+from nav_msgs.msg import Odometry
 
 
 class OdomPosPublisher(Node):
-
     def __init__(self):
         super().__init__('odom_pos_publisher')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
-        timer_period = 0.5 
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
 
-    def timer_callback(self):
-        msg = String()
-        msg.data = 'Odom position: %d' % self.i
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
-        self.i += 1
+        self.subscription = self.create_subscription(
+            Odometry,
+            'odom',
+            self.odometry_callback,
+            10)
 
+        self.subscription  # prevent unused variable warning
+
+    def odometry_callback(self, msg):
+        self.get_logger().info(f'Position: {msg.pose.pose.position}\n')
 
 def main(args=None):
     try:

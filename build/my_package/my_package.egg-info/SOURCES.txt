@@ -3,6 +3,7 @@ setup.cfg
 setup.py
 my_package/__init__.py
 my_package/my_node.py
+my_package/odom_pub.py
 my_package/py.typed
 my_package.egg-info/PKG-INFO
 my_package.egg-info/SOURCES.txt
